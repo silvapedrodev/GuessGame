@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Adivinhação</title>
+  <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/media-query.css">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <main>
+    <div class="screen1">
+      <h1>Jogo da Adivinhação</h1>
+      <img src="assets/img/thinking-face.png" alt="emoji pensativo">
+      <div class="game">
+        <button id="play">JOGAR</button>
+        <button id="HowToPlay">Como Jogar?</button>
+      </div>
+    </div>
+
+    <div class="screen2 hide">
+      <div class="score">
+          <div>
+            <p>SCORE:</p>
+            <p id="scorePoint">0</p>
+          </div>
+      </div>
+      <h1>Jogo da Adivinhação</h1>
+      <p>Adivinhe o número entre 0 e 10</p>
+      <img src="assets/img/emoji-thinking.gif" alt="thinking emoji">
+      <form>
+        <input id="inputNumber" type="number">
+        <button id="try">Tentar</button>
+      </form>
+    </div>
+
+    <div class="screen3 hide">
+      <h2>Você acertou em X tentativas!</h2>
+      <p>+X PONTOS</p>
+      <button id="btnReset">Jogar novamente</button>
+      <button id="btnExit">
+        <img src="assets/img/exit.png" alt="">
+      </button>
+    </div>
+
+    <div class="screen4 hide">
+      <h1>Como Jogar</h1>
+      <p>Bem-vindo ao nosso jogo de adivinhação!</p>
+      <p>Estou pensando em um número entre <strong>1 e 10</strong>. Seu objetivo é adivinhar o número que estou pensando.</p>
+      <p>Você pode fazer suas tentativas digitando números, e eu direi se você acertou.</p>
+      <p>Aqui está como funciona a pontuação:</p>
+      <ul>
+        <li>Se você acertar o número em <strong>1 tentativa</strong>, você ganhará <strong>20 pontos</strong>.</li>
+        <li>Se você acertar o número em <strong>2 a 5 tentativas</strong>, você ganhará <strong>10 pontos</strong>.</li>
+        <li>Se você acertar o número em <strong>6 a 8 tentativas</strong>, você ganhará <strong>4 pontos</strong>.</li>
+        <li>Se você acertar o número em mais de <strong>8 tentativas</strong>, você ganhará <strong>1 ponto</strong>.</li>
+      </ul>
+      <button id="btnBack">VOLTAR</button>
+    </div>
+
+
+    <div class="language">
+      <p id="lang">Idioma</p>
+      <div>
+        <img id="us-flag" src="assets/img/us-flag.png" alt="United States Flag">
+        <img id="br-flag" src="assets/img/br-flag.png" alt="Brazil Flag">
+        <img id="es-flag" src="assets/img/spain-flag.png" alt="Spain Flag">
+        <img id="ru-flag" src="assets/img/russian-flag.png" alt="Russian Flag">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Criado e desenvolvido por <strong>Pedro.S</strong> <span id="ano"></span></p>
+    <div>
+      <a href="https://github.com/silvapedrodev" target="_blank"><i class="lab la-github"></i></a>
+    </div>
+  </footer>
+
+  <script src="main/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* Typical Device breakpoints
+  -----------------------------
+
+  telas pequenas (XS): Menos de 576px
+  Celular (SM): 576px - 767px
+  Tablet (MD): 768px - 991px
+  Desktop (LG): 992px - 1199px
+  Telas grandes (XL): 1200px e acima
+  */
+  @media screen and (max-width: 400px) {
+    main{
+      margin-top: -3rem;
+    }
+
+    footer{
+      margin: 0;
+      bottom: 2vh;
+    }
+
+    .screen4 h1{
+      font-size: 2rem;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+    main{
+      margin-top: -30rem;
+    }
+
+    .screen1{
+      height: 45rem;
+    }
+
+    .screen1 h1, .screen2 h1{
+      font-size: 3rem;
+    }
+
+    .game button{
+      width: 30rem;
+    }
+
+    .language{
+      margin: -18rem 2rem;
+    }
+
+    .screen2{
+      width: min(70rem, 90%);
+      margin: auto;
+    }
+
+    .score{
+      top: 1.4rem;
+      left: 6rem;
+    }
+  }

@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%; /* 10px */
+
+  --font-dm: "DM Sans", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-score: "Lilita One", sans-serif;
+
+  --gradient: linear-gradient(90deg, rgba(228,89,50,1) 0%, rgba(243,169,62,1) 100%);
+  --color01: #ffce4e;
+  --color02: #e6b63f;
+}
+
+body{
+  background: url(../assets/img/bg.png);
+
+  font-size: 1.6rem;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body, button, input{
+  font-family: var(--font-dm);
+}
+
+
+main{
+  width: min(80rem, 90%);
+
+  margin-top: -10rem;
+  position: relative;
+}
+
+/* button animations */
+button{
+  background-color: var(--color01);
+}
+
+button, input{
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.288);
+}
+
+.screen1 button:hover, .screen2 button:hover, .screen3 button:hover, .screen4 button:hover{
+  cursor: pointer;
+  background-color: var(--color02);
+}
+
+.language img:hover{
+  border: 2px solid black;
+  border-radius: .6rem;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: scale .4s;
+}
+
+.language img:active, button:active{
+  transform: scale(98%);
+}
+
+.screen1, .screen2, .screen3, .screen4{
+  background: var(--gradient);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 1px 2px 20px rgba(228, 89, 50, 0.466);
+
+  padding: 3rem 5rem;
+}
+
+.screen1 h1, .screen2 h1{
+  font-family: var(--font-poppins);
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.screen1 > img, .screen2 > img{
+  width: 150px;
+  border-radius: 50%;
+  margin: 1.5rem auto;
+}
+
+/* Screen 1 */
+
+.game{
+ display: flex;
+ gap: 1.6rem;
+ flex-direction: column;
+}
+
+.game button{
+  width: 20rem;
+
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.6rem;
+
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+.language{
+  background-color: var(--color01);
+  width: 15rem;
+
+  font-weight: bold;
+  font-size: 1.8rem;
+
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.6rem;
+  margin-top: 2rem;
+
+  padding: 1rem;
+}
+
+.language img{
+  margin-right: .2rem;
+  width: 6rem;
+  height: 4rem;
+
+  border-radius: .6rem;
+}
+
+/* Screen2 */
+.score{
+  width: 150px;
+  height: 40px;
+  background-color: var(--color01);
+  display: grid;
+  place-items: center;
+
+  border-radius: 1.5rem;
+
+  position: absolute;
+  top: -5rem;
+  left: 0;
+}
+
+.score div{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #9f3e0b;
+
+  width: 90%;
+  font-family: var(--font-score);
+  font-size: 1.8rem;
+  letter-spacing: .1rem;
+  color: white;
+  font-weight: bold;
+
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+.screen2 > p{
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.screen2 img{
+  width: 10rem;
+}
+
+.screen2 form{
+  display: flex;
+}
+
+form input, button{
+  border: none;
+  padding: 1.6rem;
+  margin: 1.5rem auto;
+}
+
+.screen2 input{
+  width: 7rem;
+  background-color: #f5dfa7;
+  border-radius: .6rem 0 0 .6rem;
+}
+
+.screen2 button{
+  border-radius: 0 .6rem .6rem 0;
+
+  font-weight: bold;
+}
+
+/* Screen 3 */
+.screen3{
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.screen3 h2{
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.screen3 p{
+  margin-top: 1rem;
+}
+
+.screen3 > button{
+  font-weight: bold;
+  border-radius: .6rem;
+  margin-top: 3rem;
+}
+
+#btnExit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 4rem;
+  height: 4rem;
+  margin: 0;
+}
+
+#btnExit img{
+  width: 3.5rem;
+}
+
+/* screen 4*/
+.screen4 {
+  text-align: center;
+  margin: .8rem auto;
+}
+
+.screen4 p{
+margin: .6rem auto;
+}
+
+.screen4 button{
+  border-radius: .6rem;
+}
+
+.screen4 ul{
+  margin-top: 1rem;
+}
+
+.screen4 li{
+  margin: 1rem auto;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+  opacity: 70%;
+
+  margin-top: 80vh;
+  
+  position: fixed;
+}
+
+footer div{
+  background: var(--gradient);
+  border-radius: 1rem;
+}
+
+footer i{
+  color: white;
+  font-size: 3rem;
+}
+
+footer div:hover{
+  transform: scale(1.2);
+}
+
+.hide{
+  display: none;
+}
+
