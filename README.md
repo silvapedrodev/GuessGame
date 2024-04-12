@@ -12,7 +12,7 @@
 
 
 <p>
-  <img alt="Capa do projeto" src="./assets/preview.gif">
+  <img alt="capa do projeto" src="https://github.com/silvapedrodev/GuessGame/blob/main/assets/screenshot/preview.gif?raw=true">
 </p>
 
 ## 📒 About
