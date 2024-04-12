@@ -35,7 +35,7 @@
 ## 💻 Layout Desktop | 📱 Layout mobile
 [![preview](https://github.com/silvapedrodev/GuessGame/blob/main/assets/screenshot/print.png?raw=true)](https://github.com/silvapedrodev/GuessGame)
 
-- <a href="" target="_blank">**Click Here** &#x1F517;</a>
+- <a href="https://silvapedrodev.github.io/GuessGame/" target="_blank">**Click Here** &#x1F517;</a>
 
 <br>
 
